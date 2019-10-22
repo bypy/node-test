@@ -21,7 +21,7 @@
         }    
     }
 
-    
+    // сохраняем полученную из файла фразу
     let saveText = txt => answerA.push(txt);
 
     
@@ -57,7 +57,7 @@
 
     await getFileData(root);
 
-    let answerS = answer.join(" "); // получаем строку из массива слов
+    let answerS = answerA.join(" "); // получаем строку из массива слов
 
     console.log(answerS);
     alert(answerS); // для тех, кто "не под капотом"
